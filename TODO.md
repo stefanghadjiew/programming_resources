@@ -13,3 +13,4 @@
 [ ] Create main navigation component ( still need to think about what we need there , since the sidebar will handle going through different resources by type )
 [ ] Create Footer component
 [X] Create sign out flow
+[ ] Create 404 not found page
