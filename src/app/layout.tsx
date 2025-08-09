@@ -3,7 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 
-import { Sidebar } from './components';
+import { ConvexClientProvider, Layout } from '../components';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -28,10 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="max-w-[1400px] m-auto">
-          <Sidebar />
-          {children}
-        </div>
+        <ConvexClientProvider>
+          <Layout>{children}</Layout>
+        </ConvexClientProvider>
       </body>
     </html>
   );
