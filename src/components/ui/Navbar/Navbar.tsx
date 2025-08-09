@@ -5,8 +5,8 @@ import { clsx } from 'clsx';
 import { Icons } from '@components';
 
 const classes = {
-  navbarWrapper: clsx('m-w-[1400px] m-auto p-[10px]'),
-  navbar: clsx('py-[10px] flex justify-between border-b-2 border-gray-500'),
+  navbarWrapper: clsx('m-w-[1400px] m-auto py-[10px] mb-[100px]'),
+  navbar: clsx('py-[10px] flex justify-between'),
   logo: clsx('text-gray-500'),
   navbarItems: 'flex gap-2 items-center',
   navbarItem:
