@@ -1,7 +1,7 @@
 'use client';
 
+import { signUserOut } from '@lib';
 import { clsx } from 'clsx';
-import { signUserOut } from 'lib/auth-client';
 import { useRouter } from 'next/navigation';
 
 import { Icons } from '@components';
