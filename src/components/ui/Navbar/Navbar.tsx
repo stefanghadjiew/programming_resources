@@ -1,6 +1,8 @@
 'use client';
 
 import { clsx } from 'clsx';
+import { signUserOut } from 'lib/auth-client';
+import { useRouter } from 'next/navigation';
 
 import { Icons } from '@components';
 
@@ -14,6 +16,8 @@ const classes = {
 };
 
 export const Navbar = () => {
+  const router = useRouter();
+
   return (
     <div className={classes.navbarWrapper}>
       <div className={classes.navbar}>
@@ -24,6 +28,12 @@ export const Navbar = () => {
           <li className={classes.navbarItem}>Item 1</li>
           <li className={classes.navbarItem}>Item 2</li>
           <li className={classes.navbarItem}>Item 3</li>
+          <button
+            onClick={() => signUserOut(() => router.push('/login'))}
+            className="bg-gray-500 px-2 py-1 rounded text-amber-400 font-bold cursor-pointer"
+          >
+            Logout
+          </button>
         </ul>
       </div>
     </div>
