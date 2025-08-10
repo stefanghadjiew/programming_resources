@@ -16,7 +16,7 @@ export const Navbar = () => {
     <div className={classes.navbarWrapper}>
       <div className={classes.navbar}>
         <div className={classes.logo}>
-          <Icons.Study className="cursor-pointer" />
+          <Icons.Logo className="cursor-pointer" />
         </div>
         <ul className={classes.navbarItems}>
           <li className={classes.navbarItem}>Item 1</li>

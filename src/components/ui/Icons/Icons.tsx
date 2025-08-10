@@ -11,4 +11,4 @@ function Studyverse(props: Readonly<SVGProps<SVGSVGElement>>) {
   );
 }
 
-export const Icons = { Study: Studyverse };
+export const Icons = { Logo: Studyverse };
