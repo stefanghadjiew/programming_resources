@@ -24,4 +24,6 @@
 [ ] Add link between Login and Signup pages
 [ ] Sign up form has wrong footer ( needs a link to log in )
 [ ] Create landing page and redirect to /resources when there is an active session
-[ ] Add Back To Home from login page and sign up page (maybe crete BackToHomeButton)
+[X] Add Back To Home from login page and sign up page (maybe create BackToHomeButton)
+[ ] Make Logout Button same style as BackToHomeButton (icon button)
+[ ] Add Link to the logo so that it redirects to Home page ( once created )
