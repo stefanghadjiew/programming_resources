@@ -17,7 +17,7 @@ export function FormWrapper({ className, ...props }: React.ComponentProps<'div'>
         <Icons.Logo className="m-auto cursor-pointer" />
         <CardHeader className="text-center">
           <CardTitle className="text-xl ">Welcome back</CardTitle>
-          <CardDescription className="text-gray-500">Login with your Facebook or Google account</CardDescription>
+          <CardDescription className="text-gray-500">Use your Facebook or Google account</CardDescription>
         </CardHeader>
         <CardContent>
           <Form action={formAction} />

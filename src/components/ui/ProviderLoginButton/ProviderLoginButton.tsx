@@ -26,11 +26,10 @@ const providerIcons: Record<Provider, React.ReactElement> = { Facebook, Google, 
 
 export const ProviderLoginButton = ({ provider }: { provider: Provider }) => {
   const providerIcon = providerIcons[provider];
-  const buttonText = `Login with ${provider}`;
   return (
     <Button type="button" onClick={() => signInWithSocial(provider)} className="w-full cursor-pointer font-bold">
       {providerIcon}
-      {buttonText}
+      {provider}
     </Button>
   );
 };

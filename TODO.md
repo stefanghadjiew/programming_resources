@@ -21,3 +21,5 @@
 [X] Extract form in separate component with prop of type = login/signup and encapsulate ui + action in that component
 [X] Fix issue where clicking on ProviderLoginButton triggers form validation
 [ ] In server actions (auth) persist the created user in DB once DB adapter is done
+[ ] Add link between Login and Signup pages
+[ ] Sign up form has wrong footer ( needs a link to log in )
