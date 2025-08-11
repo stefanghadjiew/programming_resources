@@ -1,8 +1,12 @@
 import { createAuthClient } from 'better-auth/react'; // make sure to import from better-auth/react
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const PROVIDERS = ['github', 'facebook', 'google'] as const;
-type Provider = (typeof PROVIDERS)[number];
+export const PROVIDERS = {
+  Github: 'Github',
+  Facebook: 'Facebook',
+  Google: 'Google'
+} as const;
+
+export type Provider = (typeof PROVIDERS)[keyof typeof PROVIDERS];
 
 const { signIn, signUp, useSession, signOut } = createAuthClient({
   // you can pass client configuration here
@@ -10,7 +14,7 @@ const { signIn, signUp, useSession, signOut } = createAuthClient({
 
 const signInWithSocial = async (provider: Provider) => {
   try {
-    await signIn.social({ provider });
+    await signIn.social({ provider: provider.toLowerCase() });
   } catch (error) {
     console.error(`Sign-in with ${provider} failed`, error);
     throw error;

@@ -22,7 +22,8 @@
     "paths": {
       "@components": ["components/index.ts"],
       "@lib": ["lib/index.ts"],
-      "@shadcn":["@components/index.ts"]
+      "@shadcn":["@components/index.ts"],
+      "@shadcnui": ["@components/components/ui/index.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

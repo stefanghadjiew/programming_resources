@@ -18,4 +18,6 @@
 [X] Create sign out flow
 [X] Create 404 not found page
 [ ] Create OnThisPage component with contents of the current page
-[ ] Extract login Button for providers in a separate component and handle logic there
+[X] Extract login Button for providers in a separate component and handle logic there
+[ ] Extract form in separate component with prop of type = login/signup and encapsulate ui + action in that component
+[X] Fix issue where clicking on ProviderLoginButton triggers form validation
