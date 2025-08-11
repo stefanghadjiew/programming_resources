@@ -23,3 +23,4 @@
 [ ] In server actions (auth) persist the created user in DB once DB adapter is done
 [ ] Add link between Login and Signup pages
 [ ] Sign up form has wrong footer ( needs a link to log in )
+[ ] Create landing page and redirect to /resources when there is an active session

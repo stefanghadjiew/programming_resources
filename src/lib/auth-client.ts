@@ -14,7 +14,7 @@ const { signIn, useSession, signOut } = createAuthClient({
 
 const signInWithSocial = async (provider: Provider) => {
   try {
-    await signIn.social({ provider: provider.toLowerCase() });
+    await signIn.social({ provider: provider.toLowerCase(), callbackURL: '/resources' });
   } catch (error) {
     console.error(`Sign-in with ${provider} failed`, error);
     throw error;
