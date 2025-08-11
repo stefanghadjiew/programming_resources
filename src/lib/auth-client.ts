@@ -8,7 +8,7 @@ export const PROVIDERS = {
 
 export type Provider = (typeof PROVIDERS)[keyof typeof PROVIDERS];
 
-const { signIn, signUp, useSession, signOut } = createAuthClient({
+const { signIn, useSession, signOut } = createAuthClient({
   // you can pass client configuration here
 });
 
@@ -24,8 +24,8 @@ const signUserOut = async (callback: () => void) => {
   await signOut({
     fetchOptions: {
       onSuccess: () => callback(),
-      onError: (error) => console.error('Error when trying to sign user out :', error.error)
+      onError: (error) => console.error('Error while trying to sign user out:', error.error)
     }
   });
 };
-export { signInWithSocial, signUp, useSession, signUserOut };
+export { signInWithSocial, useSession, signUserOut };

@@ -1,7 +1,6 @@
 #08.09.2025
-[ ] Create user schema (might not need)
+[ ] Create user schema
 [ ] Create resource schema
-[ ] Create Main navigation component
 [X] Add Better auth
 [ ] Add email/password login with socials
 [X] Github
@@ -9,7 +8,7 @@
 [ ] Google
 [ ] Integrate Better auth with convex ( probably need to create a DB adapter to handle automatic storage in Convex from Better auth)
 [X] Create login form ( maybe see shadcn ui )
-[ ] Create signup form ( maybe see shadcn ui )
+[X] Create signup form ( maybe see shadcn ui )
 [X] Create login page
 [ ] Create signup page
 [ ] Create ProtectedLayout client component to redirect to login/signup if user is not authenticated
@@ -19,5 +18,6 @@
 [X] Create 404 not found page
 [ ] Create OnThisPage component with contents of the current page
 [X] Extract login Button for providers in a separate component and handle logic there
-[ ] Extract form in separate component with prop of type = login/signup and encapsulate ui + action in that component
+[X] Extract form in separate component with prop of type = login/signup and encapsulate ui + action in that component
 [X] Fix issue where clicking on ProviderLoginButton triggers form validation
+[ ] In server actions (auth) persist the created user in DB once DB adapter is done
