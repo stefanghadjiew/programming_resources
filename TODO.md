@@ -27,3 +27,4 @@
 [X] Add Back To Home from login page and sign up page (maybe create BackToHomeButton)
 [ ] Make Logout Button same style as BackToHomeButton (icon button)
 [ ] Add Link to the logo so that it redirects to Home page ( once created )
+[ ] Moove all SVG icons to Icons component
